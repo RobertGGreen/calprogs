@@ -59,7 +59,7 @@
       integer :: num_args
       num_args = command_argument_count()
       if (.NOT. num_args .EQ. 3) then
-         write(*,*) 'Expects 3 arguments: year month day'
+         write(*,*) 'calday2jday expects 3 arguments: year month day'
          call exit(1)
       endif
       call get_command_argument(1,Yarg)
