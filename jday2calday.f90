@@ -62,7 +62,7 @@
       integer :: num_args
       num_args = command_argument_count()
       if (.NOT. num_args .EQ. 2) then
-         write(*,*) 'Expects 2 arguments: year dayofyear'
+         write(*,*) 'jday2calday expects 2 arguments: year dayofyear'
          call exit(1)
       endif
       call get_command_argument(1,Yarg)
